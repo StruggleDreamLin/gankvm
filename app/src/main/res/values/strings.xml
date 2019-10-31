@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GankVM</string>
+    <string name="title_home">Home</string>
+    <string name="title_girls">Girls</string>
+    <string name="title_search">Search</string>
+
+    <string name="title_save">保存</string>
+    <string name="title_share">分享</string>
+
+    <string name="action_save">保存</string>
+    <string name="action_share">分享</string>
+
+    <string name="no_more_data">已经到底了~</string>
+
+    <string name="share_fail">分享失败</string>
+    <string name="share_success">分享成功</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+
+</resources>

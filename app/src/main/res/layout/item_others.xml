@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/corner_shape">
+
+    <ImageView
+        android:id="@+id/iv_cate"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@id/iv_cate"
+        android:text="this is title"
+        android:textSize="14sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@id/iv_cate"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="34q4weqwekj hkjhdsdjakshkjhakfdhkahfdkhkafdhkahdkfha安居区文化空气好的喀什的卡号的刷卡号打卡还是快点哈扩大到双卡双待卡华师大喀什的卡号的刷卡电话卡萨回单卡"
+        android:textSize="12sp"></TextView>
+
+</RelativeLayout>
