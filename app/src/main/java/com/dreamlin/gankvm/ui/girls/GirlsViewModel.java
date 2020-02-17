@@ -16,7 +16,7 @@ import static com.dreamlin.gankvm.ui.home.HomeFragment.PAGE_SIZE;
 
 public class GirlsViewModel extends BaseViewModel {
 
-    private MutableLiveData<List<ResultsEntity>> mGirls;
+    MutableLiveData<List<ResultsEntity>> mGirls;
 
     public GirlsViewModel() {
         mGirls = new MutableLiveData<>();

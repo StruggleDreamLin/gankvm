@@ -16,10 +16,10 @@ import static com.dreamlin.gankvm.ui.home.HomeFragment.PAGE_SIZE;
 
 public class HomeViewModel extends BaseViewModel {
 
-    private MutableLiveData<List<ResultsEntity>> mResultsEnitys;
+    MutableLiveData<List<ResultsEntity>> mResultsEntities;
 
     public HomeViewModel() {
-        mResultsEnitys = new MutableLiveData<>();
+        mResultsEntities = new MutableLiveData<>();
     }
 
     public LiveData<List<ResultsEntity>> getAlls(int page) {
@@ -27,9 +27,9 @@ public class HomeViewModel extends BaseViewModel {
                 .getAll(page, PAGE_SIZE)
                 .compose(RxHelper.applySchedulers(this))
                 .subscribe(resultsEnities -> {
-                    mResultsEnitys.setValue(resultsEnities);
+                    mResultsEntities.setValue(resultsEnities);
                 }, throwable -> throwable.printStackTrace());
         addDisposable(subscribe);
-        return mResultsEnitys;
+        return mResultsEntities;
     }
 }
